@@ -9,7 +9,7 @@ before_deploy: ./travis-before-deploy.sh
 deploy:
 - provider: releases
   api_key: "$GH_TOKEN"
-  file: "Squirrel.pkg"
+  file: "package/Squirrel.pkg"
   skip_cleanup: true
   on:
     tags: false
